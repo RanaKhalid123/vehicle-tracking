@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "d23869c5-bf4d-44cf-a9af-e5a78ac91423",
+		"name": "Vehicle-Tracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This is titke\",\r\n    \"description\": \"sddddsdsds\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/vehicle/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllVehicles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/vehicle/all-vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"all-vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-position",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vehicle-positon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/vehicle/vehicle-position/1/2021-11-01 08:00:33/2021-11-04 12:06:39",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"vehicle",
+						"vehicle-position",
+						"1",
+						"2021-11-01 08:00:33",
+						"2021-11-04 12:06:39"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
